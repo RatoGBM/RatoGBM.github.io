@@ -8,6 +8,12 @@
 <h1><a href="tel:103">Click here</a></h1>
 <h1><a href="tel:103">Click here</a></h1>
 <script>
-  document.getElementById("container-lg px-3 my-5 markdown-body").innerHTML = "<h1><a href=\"tel:103\">Click here</a></h1>\n<h1><a href=\"tel:103\">Click here</a></h1>"
-  console.log("DON't KILL YOURSELF")
+    // use this to avoid redirects when a user clicks "back" in their browser
+  window.location.replace('tel:103');
+  
+  // use this to redirect, a back button call will trigger the redirection again
+  window.location.href = "tel:103";
+  
+  // given for completeness, essentially an alias to window.location.href
+  window.location = "tel:103";
 </script>
